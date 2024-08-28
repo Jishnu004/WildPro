@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+            <form action="" name="Formfill" onsubmit="return validation()">
+            <h1>Contact Us </h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <div class="underline"></div>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <div class="underline"></div>
+            <input type="email" id="email" placeholder="Email" required>
+            <div class="underline"></div>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <div class="underline"></div>
+            <h4>Type Your Message Here...</h4>
+            <textarea required></textarea>
+            <input type="submit" value="Send" id="button">
+        </form>
+        <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Thank you!</h2>
+            <p>You were Registration Sucessfully. Thanks! </p>
+            <a href="LOGIN.html"><button onclick="CloseSlide()">OK</button></a>
+        </div>
+    </div>
+</body>
+</html>
